@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background: rgba(78, 78, 78, 0.411);
+  height: 80px;
+  box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+li {
+  list-style: none;
+}
+
+label.brandText {
+  color: snow;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  background: rgba(255, 250, 250, 0.25);
+}
+
+.checkbtn {
+  color: snow;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.brandText {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #555;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 21px;
+    border-radius: 8px;
+  }
+  a:hover,
+  a.active {
+    background: rgba(255, 250, 250, 0.25);
+    color: rgb(243, 231, 208);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+html {
+  background-size: cover;
+  height: calc(100vh - 80px);
+  background-image: linear-gradient(
+      115deg,
+      rgba(61, 61, 61, 0.589),
+      rgba(73, 73, 73, 0.486)
+    ),
+    url(https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
