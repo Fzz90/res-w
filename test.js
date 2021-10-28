@@ -19,9 +19,12 @@ const mirai = "Ingat Masa Depan!";
 const game = "ML";
 const PU = "PU";
 
-let hariUltah = "Hari ini";
+var hariUltah = new Date();
+const tanggal = hariUltah.getDate();
+const bulan = hariUltah.getMonth() + 1;
+const tahun = hariUltah.getFullYear();
 
-if (hariUltah) {
+if (tanggal == 28 && bulan == 10 && tahun == 2021) {
   alert(anak.ultah(1));
 } else {
   alert(anak.hariBiasa());
