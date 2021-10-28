@@ -15,9 +15,9 @@ class Anak {
 }
 let anak = new Anak("Namamu", 15);
 
-const mirai = "Ingat Masa Depan!";
-const game = "ML";
-const PU = "PU";
+let mirai = "Ingat Masa Depan!";
+let game = "ML";
+let PU = "PU";
 
 var hariUltah = new Date();
 const tanggal = hariUltah.getDate();
